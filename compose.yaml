@@ -1,0 +1,9 @@
+name: myproject
+
+services:
+  web:
+    build: .
+    image: test-docker-app
+    container_name: tets-docker-app-container
+    ports:
+      -"5000:5000"
