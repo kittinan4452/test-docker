@@ -7,3 +7,7 @@ services:
     container_name: tets-docker-app-container
     ports:
       - "5000:5000"
+  db:
+    image: mongo:4.4
+    ports:
+      - "27017:27017"
