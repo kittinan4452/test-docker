@@ -9,5 +9,12 @@ services:
       - "5000:5000"
   db:
     image: mongo:4.4
+    container_name: mymongo
     ports:
       - "27017:27017"
+    volumes:
+    - mongo-data:/data/db
+    - mongo-configdb:/data/configdb
+volumes:
+  mongo-data:
+  mongo-configdb:
